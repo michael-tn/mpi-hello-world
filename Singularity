@@ -8,9 +8,9 @@ From: ubuntu:latest
     apt-get -y install make build-essential zlib1g-dev libncurses5-dev wget git
     echo "Get and Build openmpi"
     cd /usr/local/src 
-    wget https://www.open-mpi.org/software/ompi/v2.1/downloads/openmpi-2.1.1.tar.bz2 
-    tar -xjf openmpi-2.1.1.tar.bz2
-    cd openmpi-2.1.1 
+    wget https://www.open-mpi.org/software/ompi/v2.1/downloads/openmpi-3.0.0.tar.bz2 
+    tar -xjf openmpi-3.0.0.tar.bz2
+    cd openmpi-3.0.0  
     ./configure --prefix=/usr/local --with-hwloc
     make -j4 
     make install
